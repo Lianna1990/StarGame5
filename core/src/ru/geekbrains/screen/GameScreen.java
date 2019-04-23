@@ -1,6 +1,14 @@
 package ru.geekbrains.screen;
 
-import ru.geekbrains.base.BaseScreen;
+import com.badlogic.gdx.Game;
 
-public class GameScreen extends BaseScreen {
+import ru.geekbrains.screen.MenuScreen;
+
+public class StarGame extends Game {
+
+    @Override
+    public void create() {
+        setScreen(new MenuScreen(this));
+    }
+
 }
